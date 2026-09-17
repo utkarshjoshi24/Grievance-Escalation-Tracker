@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#004395", "on-primary-container": "#00285d", "inverse-primary": "#005ac2", "surface-bright": "#36393e", "on-secondary-fixed": "#001f28", "primary-fixed-dim": "#adc6ff", "primary-fixed": "#d8e2ff", "on-error": "#690005", "on-tertiary-container": "#340080", "tertiary-fixed": "#e9ddff", "secondary": "#a5e7ff", "surface-variant": "#323539", "on-secondary-container": "#00566a", "surface-container-lowest": "#0b0e12", "surface-container-highest": "#323539", "secondary-container": "#00d2ff", "error-container": "#93000a", "secondary-fixed": "#b6ebff", "on-secondary-fixed-variant": "#004e60", "on-primary-fixed": "#001a42", "outline-variant": "#424754", "inverse-surface": "#e1e2e8", "outline": "#8c909f", "surface-container-high": "#272a2e", "primary-container": "#4d8eff", "surface-container": "#1d2024", "on-surface": "#e1e2e8", "inverse-on-surface": "#2e3135", "surface-dim": "#111418", "surface-container-low": "#191c20", "secondary-fixed-dim": "#47d6ff", "on-secondary": "#003543", "on-tertiary-fixed": "#23005c", "surface-tint": "#adc6ff", "on-tertiary": "#3c0091", "on-primary": "#002e6a", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#5516be", "surface": "#111418", "on-background": "#e1e2e8", "tertiary-container": "#a078ff", "primary": "#adc6ff", "on-surface-variant": "#c2c6d6", "tertiary": "#d0bcff", "background": "#111418", "on-error-container": "#ffdad6", "tertiary-fixed-dim": "#d0bcff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "1rem" }, "fontFamily": { "headline-lg-mobile": ["Geist"], "data-mono": ["JetBrains Mono"], "display": ["Geist"], "body-md": ["Geist"], "body-sm": ["Geist"], "headline-sm": ["Geist"], "body-lg": ["Geist"], "headline-md": ["Geist"], "label-sm": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "headline-lg": ["Geist"] }, "fontSize": { "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="GET Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5HBJJngr6kg1R9lmMfRDBjSrt74ZpG_aluCRWGun4uok47ew6TbhSPoDUfIw94pbhYam2ZTJTl-wtJBSFOjJnL2L0v_363zd1EcXFL49-jXkfPW-0aKcCCw6LWqEsE-XnrKNA2iKd0igKzCNxVX6WwXzIGvrYvstlWqXG8a0Z3635q5eNQPFnT2XIVckCTY-9d6IILMttTmlus4ZwjIk85pCk-g8C5_LtmFD4Dv_6n5GxFnUWMF4HFJcy"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">GET</span><span class="hidden xl:inline text-outline font-data-mono text-label-sm px-space-xs py-0.5 bg-surface-container-high rounded">Redressal Engine</span></div><span class="hidden lg:block text-outline font-body-sm text-body-sm italic border-l border-outline-variant/30 pl-space-md">Raise it. Track it. Resolve it.</span></div><nav class="hidden md:flex items-center gap-1 bg-surface-container-low/60 p-1 rounded-xl" data-active-classes="bg-surface-container-high text-primary font-medium rounded-lg shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="landing" href="#">Landing</a><a aria-current="page" class="px-space-md py-1.5 transition-all bg-surface-container-high text-primary font-medium rounded-lg shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]" data-path="track-grievance" href="#">Track Grievance</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="student-portal" href="#">Student Portal</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="authority-workspace" href="#">Authority Workspace</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="admin-suite" href="#">Admin Suite</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="hierarchy-config" href="#">Hierarchy Config</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-low border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(165,231,255,0.8)] animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">SLA Live 98.4%</span></div><button class="flex items-center gap-space-sm px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-data-mono text-label-sm hidden sm:inline text-outline">⌘K</span></button><div class="relative flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold ring-2 ring-surface-container-lowest">3</span></div><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbLV42empv9kCUOn6BVof0fExAmXgJuG1KqodDMPTY1u1L_DDDNZp_-0-ynJTuxqLUh93TBP9nZkHaLdLhfFAZsq756pOM_BEM80i2hqOxQJW-E8xI4zFXPt7aP89ISxVj_tvUVL4dlWl0Fsc-KekPG-KLq3OfkM2OXEWfwF4pm0iy_Xni5G4Fmh87xaZfDyhmshloSRReScLjLkeLvbeew2zALFmnQUJ11DQgpU39l4JL9fmOfpqH2Q"/></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle ambient glow background -->
+<div class="relative w-full overflow-hidden px-margin py-space-lg md:px-margin-tablet lg:px-margin-desktop lg:py-space-xl">
+<div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[360px] bg-primary-container/10 blur-[130px] rounded-full"></div>
+<div class="pointer-events-none absolute top-96 right-10 w-[420px] h-[280px] bg-tertiary-container/10 blur-[120px] rounded-full"></div>
+<!-- Header Section -->
+<div class="relative mx-auto max-w-5xl flex flex-col items-center text-center space-y-space-sm mb-space-xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Zero-Login Institutional Telemetry</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight font-semibold">
+        Track Your Grievance
+      </h1>
+<p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
+        Enter your private 12-character tracking token to inspect live resolution progress, SLA clocks, and escalation history.
+      </p>
+<!-- Token Search Bar Form -->
+<div class="w-full max-w-2xl mt-space-md">
+<div class="relative flex flex-col sm:flex-row items-stretch gap-space-xs p-2 rounded-xl bg-surface-container-lowest shadow-xl">
+<div class="relative flex-1 flex items-center pl-space-md">
+<span class="material-symbols-outlined text-outline text-[20px]">fingerprint</span>
+<input class="w-full bg-transparent px-space-sm py-3 font-data-mono text-headline-sm uppercase text-on-surface placeholder:text-outline focus:outline-none tracking-widest selection:bg-primary/30" id="tokenInput" maxlength="14" placeholder="e.g. GET-XXXX-XXXX" type="text" value="GET-7F9A-42KD"/>
+<button class="p-1 rounded text-outline hover:text-on-surface transition-colors pr-2" id="clearTokenBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<button class="flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-headline-sm font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_0_16px_rgba(77,142,255,0.4)] transition-all active:scale-[0.98]" id="trackBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">radar</span>
+<span>Track Status</span>
+</button>
+</div>
+<!-- Security Badge Under Search -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-sm">
+<div class="flex items-center gap-space-xs text-outline">
+<span class="material-symbols-outlined text-secondary text-[16px]">lock_clock</span>
+<span class="font-data-mono text-label-sm">256-bit encrypted token lookup. No login required.</span>
+</div>
+<span class="text-outline-variant font-data-mono text-label-sm hidden sm:inline">•</span>
+<div class="flex items-center gap-space-xs text-outline">
+<span class="material-symbols-outlined text-tertiary text-[16px]">visibility_off</span>
+<span class="font-data-mono text-label-sm">Complainant Hash Protected</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Inspection Panel Layout (3-Column Bento Desktop) -->
+<div class="relative mx-auto max-w-6xl space-y-space-lg">
+<!-- Summary Ribbon with Live Status -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md sm:p-space-lg shadow-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Left: Identity & Core Details -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[30px]">water_damage</span>
+</div>
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Tracking Identifier</span>
+<span class="font-data-mono text-headline-sm font-semibold text-primary" id="displayToken">GET-7F9A-42KD</span>
+<button class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface text-label-sm font-data-mono transition-colors" id="copyBtn" title="Copy Token to Clipboard" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copyText">Copy</span>
+</button>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">
+                Infrastructure: Hostel Block C - Hot Water Boiler Breakdown
+              </h2>
+</div>
+</div>
+<!-- Right: Luminous Status Pill & Escalation Badge -->
+<div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row sm:items-center gap-space-sm self-start lg:self-center">
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-error-container text-on-error-container shadow-[0_0_14px_rgba(239,68,68,0.25)]">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">Escalated to Level 2</span>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[15px]">timer</span>
+<span class="font-data-mono text-label-sm">Triggered 4h 12m ago</span>
+</div>
+</div>
+</div>
+<!-- Meta Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-lg pt-space-md bg-surface-container/40 p-space-md rounded-lg">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Current Authority</span>
+<p class="font-headline-sm text-headline-sm font-medium text-on-surface mt-0.5">Head of Department</p>
+<span class="block font-body-sm text-body-sm text-outline mt-0.5">Civil & Campus Facilities</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Escalation Origin</span>
+<p class="font-headline-sm text-headline-sm font-medium text-error mt-0.5">CR SLA Violation</p>
+<span class="block font-body-sm text-body-sm text-outline mt-0.5">No resolution within 24h</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Complainant Privacy</span>
+<p class="font-headline-sm text-headline-sm font-medium text-secondary mt-0.5">HASH-9941-SEC</p>
+<span class="block font-body-sm text-body-sm text-outline mt-0.5">Zero PII exposed to reviewers</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Confidentiality Tier</span>
+<p class="font-headline-sm text-headline-sm font-medium text-tertiary mt-0.5">Charter Rule §14.2</p>
+<span class="block font-body-sm text-body-sm text-outline mt-0.5">Authority title only masked</span>
+</div>
+</div>
+</div>
+<!-- Main Interactive Grid: SLA Clock + Escalation Timeline -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Column 1: SLA Telemetry & Visual Radar (5 cols) -->
+<div class="lg:col-span-5 flex flex-col space-y-space-lg">
+<!-- Countdown Hero Card -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col items-center text-center relative overflow-hidden">
+<div class="pointer-events-none absolute -bottom-10 right-0 w-44 h-44 bg-error-container/10 blur-3xl rounded-full"></div>
+<div class="w-full flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">alarm</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Active SLA Timer</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-data-mono text-label-sm">Level 2 Window</span>
+</div>
+<!-- Visual SVG Ring Meter -->
+<div class="relative w-48 h-48 my-space-xs flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Background track -->
+<circle class="text-surface-container-high" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-width="7"></circle>
+<!-- Dynamic progress path (61% remaining) -->
+<circle class="text-secondary-fixed-dim transition-all duration-1000" cx="50" cy="50" fill="none" id="slaCircle" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="102.9" stroke-linecap="round" stroke-width="7"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-data-mono text-label-sm text-outline uppercase tracking-wider">Remaining</span>
+<span class="font-data-mono text-headline-md font-bold text-on-surface tracking-tight mt-1" id="countdownDisplay">18h 42m 19s</span>
+<span class="font-data-mono text-label-sm text-secondary font-medium mt-0.5">39% of 48h elapsed</span>
+</div>
+</div>
+<!-- Breach Warning Warning Note -->
+<div class="w-full mt-space-md p-space-md rounded-lg bg-surface-container-high text-left flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] flex-shrink-0 mt-0.5">warning</span>
+<div class="text-left space-y-1">
+<p class="font-headline-sm text-body-sm font-semibold text-on-surface">Automatic Auto-Transfer Protocol</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  If the <strong class="text-on-surface">Head of Department</strong> does not provide formal redressal or scheduled maintenance dispatch within <span class="font-data-mono text-secondary">18h 42m</span>, this grievance will automatically escalate to the <strong class="text-on-surface">Dean of Student Affairs</strong>.
+                </p>
+</div>
+</div>
+<!-- Escalation Path Preview -->
+<div class="w-full mt-space-md pt-space-sm flex flex-col gap-space-xs text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Enforcement Pipeline</span>
+<div class="flex items-center justify-between text-label-sm font-data-mono bg-surface-container/60 p-2 rounded">
+<span class="text-outline">L1 Class Rep</span>
+<span class="material-symbols-outlined text-[14px] text-error">arrow_forward</span>
+<span class="text-secondary font-semibold">L2 Dept Head (Active)</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="text-outline">L3 Dean</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="text-outline">L4 VC</span>
+</div>
+</div>
+</div>
+<!-- Institutional Integrity Summary Card with Inline SVG Telemetry Sparkline -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-lg shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Departmental Velocity</span>
+<span class="font-data-mono text-label-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded">98.4% SLA Compliance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Campus Facilities resolution cadence across all 4 hostel quadrants over the past 30 days.
+            </p>
+<!-- Inline Sparkline Metric (Hostel Ops) -->
+<div class="w-full h-16 rounded bg-surface-container-lowest p-2 flex items-end justify-between gap-1.5">
+<div class="w-full bg-surface-container-high rounded-t h-[40%]" title="Day 1: 4h avg"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[60%]" title="Day 5: 6h avg"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[35%]" title="Day 10: 3h avg"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[80%]" title="Day 15: 12h avg"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[50%]" title="Day 20: 5h avg"></div>
+<div class="w-full bg-secondary-fixed-dim rounded-t h-[92%]" title="Day 25: Current Surge"></div>
+<div class="w-full bg-primary rounded-t h-[70%]" title="Day 30: Active Cycle"></div>
+</div>
+<div class="flex items-center justify-between font-data-mono text-label-sm text-outline">
+<span>30 Days Ago</span>
+<span class="text-secondary font-medium">Avg Resolution: 22.4 Hours</span>
+<span>Today</span>
+</div>
+</div>
+<!-- Audit Certificate Card with DataStore Style Image Representation -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md shadow-md flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-surface-container-high flex-shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-80" data-alt="Digital forensic verification seal with blue cryptographic node grid and glowing institutional lock icon, cinematic dark charcoal aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7p2-lmIHmWUgcBsY9Pgrb96s_ab1frjnjYu9xvbvJ7tOx33JjNWMz_5raEMpHLboy0peEv9zDF9Unt2mXatD3-_nfflZAT8kdGCvJ5xffwdNMSIrunsuMQQ-UFNDyH5dzv5BSH2nTq9GIonPGmqX9prVzQyd2CApPE0AE_yerDvu2AbXs13FUx1cI_tnrB_QgmOkREllC1B0f-mQ1P9JzFyZmbVkqWT3Ne1TNBamLP9-21DBmwtgF-Q"/>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Cryptographic Attestation</span>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Tamper-Proof Audit Record #A79-994</p>
+<p class="font-body-sm text-body-sm text-outline">Immutable ledger logging all timestamps, state transitions & escalations.</p>
+</div>
+</div>
+</div>
+<!-- Column 2: Interactive Vertical Escalation Timeline (7 cols) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-low p-space-md sm:p-space-lg shadow-md flex flex-col space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Resolution Chain & Audit Log</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live procedural milestones recorded per institutional grievance charter.</p>
+</div>
+<span class="font-data-mono text-label-sm px-2.5 py-1 rounded bg-surface-container-high text-outline self-start sm:self-auto">5 Events Logged</span>
+</div>
+<!-- Timeline Container -->
+<div class="relative pl-6 sm:pl-8 space-y-space-lg before:absolute before:top-3 before:bottom-3 before:left-2.5 sm:before:left-3.5 before:w-0.5 before:bg-surface-variant">
+<!-- Node 1: Completed Submission -->
+<div class="relative group">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-[0_0_8px_rgba(0,210,255,0.4)]">
+<span class="material-symbols-outlined text-[13px] font-bold">check</span>
+</div>
+<div class="bg-surface-container/70 p-space-md rounded-xl transition-all group-hover:bg-surface-container">
+<div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-mono text-label-sm text-secondary">Step 1 • Completed</span>
+<time class="font-data-mono text-label-sm text-outline">16 Sep, 10:42 AM</time>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Grievance Submitted via Anonymous Portal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Case filed under <em class="text-on-surface">Campus Facilities / Plumbing & Heating</em>. Token <span class="font-data-mono text-primary">GET-7F9A-42KD</span> generated and encrypted on-device. Identity cryptographic hash anchored.
+                </p>
+</div>
+</div>
+<!-- Node 2: Assigned Level 1 -->
+<div class="relative group">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-[0_0_8px_rgba(0,210,255,0.4)]">
+<span class="material-symbols-outlined text-[13px] font-bold">check</span>
+</div>
+<div class="bg-surface-container/70 p-space-md rounded-xl transition-all group-hover:bg-surface-container">
+<div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-mono text-label-sm text-secondary">Step 2 • Completed</span>
+<time class="font-data-mono text-label-sm text-outline">16 Sep, 10:43 AM</time>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Assigned to Level 1: Class Representative</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  First-response 24-hour resolution clock engaged. Push dispatch sent to Section Representative terminal for Block C hostel coordination.
+                </p>
+</div>
+</div>
+<!-- Node 3: Triggered SLA Expired -->
+<div class="relative group">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-error text-on-error flex items-center justify-center shadow-[0_0_10px_rgba(255,180,171,0.5)]">
+<span class="material-symbols-outlined text-[13px] font-bold">priority_high</span>
+</div>
+<div class="bg-error-container/20 p-space-md rounded-xl transition-all group-hover:bg-error-container/30">
+<div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-error-container font-data-mono text-label-sm text-on-error-container font-bold">SLA Violation Triggered</span>
+<time class="font-data-mono text-label-sm text-error">17 Sep, 10:43 AM</time>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-error">Level 1 SLA Expired</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  No acknowledged resolution or verified status update filed within mandated 24-hour timeframe. Class Representative SLA breach marked on ombuds dashboard.
+                </p>
+</div>
+</div>
+<!-- Node 4: Escalation Action -->
+<div class="relative group">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-[0_0_10px_rgba(208,188,255,0.4)]">
+<span class="material-symbols-outlined text-[13px] font-bold">bolt</span>
+</div>
+<div class="bg-surface-container/70 p-space-md rounded-xl transition-all group-hover:bg-surface-container">
+<div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-tertiary/20 font-data-mono text-label-sm text-tertiary">Procedural Escalation</span>
+<time class="font-data-mono text-label-sm text-outline">17 Sep, 10:44 AM</time>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Automatically Escalated to Level 2: Head of Department</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Grievance jurisdiction transferred automatically to Departmental Head. Fresh 48-hour institutional resolution SLA countdown started.
+                </p>
+</div>
+</div>
+<!-- Node 5: Active Current State -->
+<div class="relative group">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center ring-4 ring-primary/20 shadow-[0_0_12px_rgba(77,142,255,0.6)]">
+<span class="w-2 h-2 rounded-full bg-on-primary-container animate-pulse"></span>
+</div>
+<div class="bg-surface-container-high p-space-md rounded-xl shadow-inner">
+<div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-data-mono text-label-sm font-bold uppercase tracking-wider">Current Live Stage</span>
+<time class="font-data-mono text-label-sm text-primary font-semibold">Today, 08:30 AM</time>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Awaiting Departmental Inspection & Work Order Dispatch</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Case currently queued in Head of Department priority inbox. Maintenance liaison technician notified for on-site boiler heating coil evaluation.
+                </p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary font-data-mono text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Countdown Active: 18h 42m before Dean auto-transfer</span>
+</div>
+</div>
+</div>
+<!-- Node 6: Upcoming Fallback Stage -->
+<div class="relative opacity-60 hover:opacity-100 transition-opacity">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-surface-variant text-outline flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-md rounded-xl">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-data-mono text-label-sm text-outline">Upcoming Escalation (If Unaddressed)</span>
+<span class="font-data-mono text-label-sm text-outline">Level 3</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-medium text-on-surface">Dean of Student Affairs</h4>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Automated handover triggers if no signed maintenance log is uploaded by HoD before deadline.</p>
+</div>
+</div>
+<!-- Node 7: Final Level -->
+<div class="relative opacity-40 hover:opacity-100 transition-opacity">
+<div class="absolute -left-6 sm:-left-8 top-1 w-5 h-5 rounded-full bg-surface-variant text-outline flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+<div class="bg-surface-container-lowest/40 p-space-md rounded-xl">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-data-mono text-label-sm text-outline">Final Appeals Tier</span>
+<span class="font-data-mono text-label-sm text-outline">Level 4</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-medium text-on-surface">Vice Chancellor Grievance Board</h4>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Institutional Ombudsman statutory tribunal with binding punitive administrative authority.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Evidence & Campus Facility Attachment Gallery -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-lg shadow-md space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Encrypted Incident Attachments</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Photographic evidence submitted with sanitized metadata (EXIF stripped at gateway).</p>
+</div>
+<span class="font-data-mono text-label-sm text-outline bg-surface-container-high px-2.5 py-1 rounded">2 Images Stored</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Image 1 -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container-high aspect-video flex flex-col justify-end p-space-md shadow-sm">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-70" data-alt="Technical photograph of an industrial basement heating boiler with leaking copper pipe and digital temperature gauge displaying error code E04 in low lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcs7JNP1Wc_u2GFVObm2kwBbmh1c7PjDr-zRf-GTjMptnIoDDKRZueqnZGuyuJNVMCcRgD4VBXU_g4nqgcyyy55nm1EXAGNmN7zcAQy14fmFGoH9RGX3MPuEKAKoLsYHoYy3iQQTX4ZteWMLNKHp-2ff0ya3HrLZy4PQMW_boSwpjt3_BdG5BhC2TN6ILWPLAT00EW-wKAOkMegodDCHSoAih04PawtZl8FieNBa-u-PAO_s9PndTZBw"/>
+<div class="relative z-10 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded flex items-center justify-between">
+<div>
+<span class="font-data-mono text-label-sm text-primary">BOILER-VALVE-C102.JPG</span>
+<span class="block font-data-mono text-[10px] text-outline">SHA256: 4e99f...81aa • 1.4 MB</span>
+</div>
+<button class="p-1 rounded bg-surface-container text-on-surface hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Image 2 -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container-high aspect-video flex flex-col justify-end p-space-md shadow-sm">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-70" data-alt="Campus hostel plumbing utility room showing cold water pressure manifold and faulty rusted immersion heater junction box with warning tags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJCvmZwq0uwwqtKnWojyJSNeacB333jPzjGIifXS_qApCTZVG6thTiO4tgioSKnJ_9tpLM4G32drsXYiElwF0aQLNvbm4Tgy0dOWhtKa9HmJyhkOiWSz8H01xzrzDGbXUrXQW0f3FC8z1letsJqZQs3oFHcSXt717Z5mRXczPBm9G9Q8nA693iyDoEkTUZP-FLcAllJbKipjIkcStY9PneT98-4W6yUcOTGckZg7VycenC2Ttd173C-Q"/>
+<div class="relative z-10 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded flex items-center justify-between">
+<div>
+<span class="font-data-mono text-label-sm text-primary">MANIFOLD-PRESSURE-EVID.JPG</span>
+<span class="block font-data-mono text-[10px] text-outline">SHA256: d08c3...2041 • 2.1 MB</span>
+</div>
+<button class="p-1 rounded bg-surface-container text-on-surface hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Bar (Footer Controls) -->
+<div class="w-full rounded-xl bg-surface-container-high p-space-md sm:p-space-lg shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant text-center sm:text-left">
+<span class="material-symbols-outlined text-secondary text-[22px] hidden sm:inline">security_update_good</span>
+<span class="font-body-sm text-body-sm">
+            Retain this token URL safely. Updates propagate in real time without refreshing.
+          </span>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-sm w-full sm:w-auto">
+<!-- Action 1: Add Note -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-body-sm font-medium transition-colors" id="openNoteModalBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">add_comment</span>
+<span>Add Anonymous Evidence / Note</span>
+</button>
+<!-- Action 2: Download Report -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-body-sm font-medium transition-colors" id="downloadReportBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Download Audit PDF</span>
+</button>
+<!-- Action 3: Report Discrepancy -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-error-container/30 hover:bg-error-container text-on-error-container font-body-sm font-medium transition-colors" id="reportInaccurateBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span>Report Inaccurate Status</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal: Anonymous Evidence / Note Submission (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-black/80 backdrop-blur-sm hidden" id="noteModal">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-low p-space-lg shadow-2xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Add Cryptographic Note</span>
+</div>
+<button class="p-1 rounded text-outline hover:text-on-surface" id="closeNoteModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Your note will be appended to tracking record <strong class="text-on-surface font-data-mono">GET-7F9A-42KD</strong>. Complainant identity remains cryptographically disconnected.
+      </p>
+<div class="space-y-space-sm">
+<label class="block font-label-sm text-label-sm text-outline uppercase" for="evidenceText">Supporting Observation or Evidence</label>
+<textarea class="w-full rounded-lg bg-surface-container-lowest p-space-md font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" id="evidenceText" placeholder="e.g. As of 2:00 PM today, maintenance staff arrived but did not have the correct replacement heating valve..." rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-secondary font-data-mono text-label-sm">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span>End-to-End Encrypted</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface-variant font-body-sm" id="cancelModalBtn" type="button">
+            Cancel
+          </button>
+<button class="flex items-center gap-1 px-space-md py-2 rounded-lg bg-primary text-on-primary font-body-sm font-semibold shadow-sm hover:bg-primary-fixed-dim" id="submitNoteBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Submit Note</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Notification Toast -->
+<div class="fixed bottom-6 right-6 z-50 max-w-sm rounded-lg bg-surface-bright text-on-surface p-space-md shadow-2xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-[22px]" id="toastIcon">info</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Notification message</span>
+</div>
+<!-- Inline Client-side Micro-interactions -->
+<script>
+    (function() {
+      // 1. Live Countdown Simulation
+      let totalSeconds = 18 * 3600 + 42 * 60 + 19;
+      const countdownEl = document.getElementById('countdownDisplay');
+      const slaCircle = document.getElementById('slaCircle');
+      const totalWindowSeconds = 48 * 3600;
+      const circumference = 2 * Math.PI * 42; // ~263.89
+
+      function updateCountdown() {
+        if (totalSeconds <= 0) {
+          if (countdownEl) countdownEl.textContent = "00h 00m 00s (BREACH)";
+          return;
+        }
+        totalSeconds--;
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+        
+        const pad = (n) => String(n).padStart(2, '0');
+        if (countdownEl) {
+          countdownEl.textContent = `${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+        }
+
+        // Update circular ring offset
+        if (slaCircle) {
+          const ratioRemaining = totalSeconds / totalWindowSeconds;
+          const offset = circumference * (1 - ratioRemaining);
+          slaCircle.style.strokeDashoffset = offset;
+        }
+      }
+      setInterval(updateCountdown, 1000);
+
+      // 2. Toast Helper
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      const toastIco = document.getElementById('toastIcon');
+      let toastTimer = null;
+
+      function showToast(message, icon = 'info') {
+        if (!toast) return;
+        clearTimeout(toastTimer);
+        toastMsg.textContent = message;
+        toastIco.textContent = icon;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        toastTimer = setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+
+      // 3. Copy Token Interaction
+      const copyBtn = document.getElementById('copyBtn');
+      const copyText = document.getElementById('copyText');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          const token = document.getElementById('displayToken')?.textContent || 'GET-7F9A-42KD';
+          navigator.clipboard?.writeText(token).then(() => {
+            if (copyText) copyText.textContent = "Copied!";
+            showToast(`Tracking Token ${token} copied to clipboard`, 'content_copy');
+            setTimeout(() => {
+              if (copyText) copyText.textContent = "Copy";
+            }, 2000);
+          }).catch(() => {
+            showToast(`Token: ${token}`, 'content_copy');
+          });
+        });
+      }
+
+      // 4. Clear Token Button
+      const tokenInput = document.getElementById('tokenInput');
+      const clearBtn = document.getElementById('clearTokenBtn');
+      if (clearBtn && tokenInput) {
+        clearBtn.addEventListener('click', () => {
+          tokenInput.value = '';
+          tokenInput.focus();
+        });
+      }
+
+      // 5. Track Status Button Search Re-simulation
+      const trackBtn = document.getElementById('trackBtn');
+      if (trackBtn) {
+        trackBtn.addEventListener('click', () => {
+          const val = (tokenInput?.value || '').trim();
+          if (!val) {
+            showToast('Please enter a valid tracking token', 'error');
+            return;
+          }
+          showToast(`Fetching latest telemetry for ${val}...`, 'sync');
+        });
+      }
+
+      // 6. Modal Interactions for Anonymous Note
+      const modal = document.getElementById('noteModal');
+      const openModalBtn = document.getElementById('openNoteModalBtn');
+      const closeModalBtn = document.getElementById('closeNoteModalBtn');
+      const cancelModalBtn = document.getElementById('cancelModalBtn');
+      const submitNoteBtn = document.getElementById('submitNoteBtn');
+      const evidenceText = document.getElementById('evidenceText');
+
+      function openModal() {
+        if (modal) modal.classList.remove('hidden');
+      }
+      function closeModal() {
+        if (modal) modal.classList.add('hidden');
+        if (evidenceText) evidenceText.value = '';
+      }
+
+      if (openModalBtn) openModalBtn.addEventListener('click', openModal);
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+      if (cancelModalBtn) cancelModalBtn.addEventListener('click', closeModal);
+
+      if (submitNoteBtn) {
+        submitNoteBtn.addEventListener('click', () => {
+          const text = evidenceText?.value?.trim();
+          if (!text) {
+            showToast('Please provide note contents before submitting', 'warning');
+            return;
+          }
+          closeModal();
+          showToast('Encrypted note appended to case ledger', 'mark_email_read');
+        });
+      }
+
+      // 7. Action Bar Other Buttons
+      const downloadBtn = document.getElementById('downloadReportBtn');
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+          showToast('Generating signed cryptographic audit report PDF...', 'picture_as_pdf');
+        });
+      }
+
+      const reportInaccurateBtn = document.getElementById('reportInaccurateBtn');
+      if (reportInaccurateBtn) {
+        reportInaccurateBtn.addEventListener('click', () => {
+          showToast('Discrepancy notice flagged for Central Ombudsperson review', 'flag');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-xl"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">GET Redressal Engine</span><span class="text-outline font-body-sm text-body-sm hidden sm:inline">Procedural institutional accountability & telemetry.</span></div><div class="flex items-center gap-space-sm px-3 py-1.5 rounded-lg bg-surface-container-low border border-outline-variant/30"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">End-to-End Complainant Anonymity Protected</span></div><div class="font-body-sm text-body-sm text-outline">© 2025 Grievance Escalation Tracker. Institutional Discretion Guaranteed.</div></div></footer></body></html>

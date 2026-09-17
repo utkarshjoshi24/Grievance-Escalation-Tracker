@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#004395", "on-primary-container": "#00285d", "inverse-primary": "#005ac2", "surface-bright": "#36393e", "on-secondary-fixed": "#001f28", "primary-fixed-dim": "#adc6ff", "primary-fixed": "#d8e2ff", "on-error": "#690005", "on-tertiary-container": "#340080", "tertiary-fixed": "#e9ddff", "secondary": "#a5e7ff", "surface-variant": "#323539", "on-secondary-container": "#00566a", "surface-container-lowest": "#0b0e12", "surface-container-highest": "#323539", "secondary-container": "#00d2ff", "error-container": "#93000a", "secondary-fixed": "#b6ebff", "on-secondary-fixed-variant": "#004e60", "on-primary-fixed": "#001a42", "outline-variant": "#424754", "inverse-surface": "#e1e2e8", "outline": "#8c909f", "surface-container-high": "#272a2e", "primary-container": "#4d8eff", "surface-container": "#1d2024", "on-surface": "#e1e2e8", "inverse-on-surface": "#2e3135", "surface-dim": "#111418", "surface-container-low": "#191c20", "secondary-fixed-dim": "#47d6ff", "on-secondary": "#003543", "on-tertiary-fixed": "#23005c", "surface-tint": "#adc6ff", "on-tertiary": "#3c0091", "on-primary": "#002e6a", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#5516be", "surface": "#111418", "on-background": "#e1e2e8", "tertiary-container": "#a078ff", "primary": "#adc6ff", "on-surface-variant": "#c2c6d6", "tertiary": "#d0bcff", "background": "#111418", "on-error-container": "#ffdad6", "tertiary-fixed-dim": "#d0bcff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "1rem" }, "fontFamily": { "headline-lg-mobile": ["Geist"], "data-mono": ["JetBrains Mono"], "display": ["Geist"], "body-md": ["Geist"], "body-sm": ["Geist"], "headline-sm": ["Geist"], "body-lg": ["Geist"], "headline-md": ["Geist"], "label-sm": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "headline-lg": ["Geist"] }, "fontSize": { "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="GET Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5HBJJngr6kg1R9lmMfRDBjSrt74ZpG_aluCRWGun4uok47ew6TbhSPoDUfIw94pbhYam2ZTJTl-wtJBSFOjJnL2L0v_363zd1EcXFL49-jXkfPW-0aKcCCw6LWqEsE-XnrKNA2iKd0igKzCNxVX6WwXzIGvrYvstlWqXG8a0Z3635q5eNQPFnT2XIVckCTY-9d6IILMttTmlus4ZwjIk85pCk-g8C5_LtmFD4Dv_6n5GxFnUWMF4HFJcy"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">GET</span><span class="hidden xl:inline text-outline font-data-mono text-label-sm px-space-xs py-0.5 bg-surface-container-high rounded">Redressal Engine</span></div><span class="hidden lg:block text-outline font-body-sm text-body-sm italic border-l border-outline-variant/30 pl-space-md">Raise it. Track it. Resolve it.</span></div><nav class="hidden md:flex items-center gap-1 bg-surface-container-low/60 p-1 rounded-xl" data-active-classes="bg-surface-container-high text-primary font-medium rounded-lg shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="landing" href="#">Landing</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="track-grievance" href="#">Track Grievance</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="student-portal" href="#">Student Portal</a><a aria-current="page" class="px-space-md py-1.5 transition-all bg-surface-container-high text-primary font-medium rounded-lg shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]" data-path="authority-workspace" href="#">Authority Workspace</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="admin-suite" href="#">Admin Suite</a><a class="px-space-md py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="hierarchy-config" href="#">Hierarchy Config</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-low border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(165,231,255,0.8)] animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">SLA Live 98.4%</span></div><button class="flex items-center gap-space-sm px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-data-mono text-label-sm hidden sm:inline text-outline">⌘K</span></button><div class="relative flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold ring-2 ring-surface-container-lowest">3</span></div><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbLV42empv9kCUOn6BVof0fExAmXgJuG1KqodDMPTY1u1L_DDDNZp_-0-ynJTuxqLUh93TBP9nZkHaLdLhfFAZsq756pOM_BEM80i2hqOxQJW-E8xI4zFXPt7aP89ISxVj_tvUVL4dlWl0Fsc-KekPG-KLq3OfkM2OXEWfwF4pm0iy_Xni5G4Fmh87xaZfDyhmshloSRReScLjLkeLvbeew2zALFmnQUJ11DQgpU39l4JL9fmOfpqH2Q"/></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Workspace Hierarchy & Telemetry Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg bg-surface-container-low p-space-xl rounded-xl shadow-md relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-primary/10 via-secondary/5 to-transparent blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs max-w-3xl z-10">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+            Authority Workspace
+          </span>
+<span class="text-outline font-label-md text-label-md">/</span>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Head of Department</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-data-mono text-label-sm">School of Engineering</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-semibold mt-1">
+          Resolver Queue & SLA Oversight
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Review assigned cases, provide time-stamped resolutions, or execute early escalation with immutable audit reasoning.
+        </p>
+</div>
+<div class="flex items-center gap-space-md z-10">
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-data-mono text-label-sm text-secondary uppercase font-semibold tracking-wider">Chain of Custody Active</span>
+</div>
+<span class="font-data-mono text-label-sm text-outline">Tier 2: Dept Level Clearance</span>
+</div>
+<button class="flex items-center gap-space-xs px-4 py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all text-body-sm font-medium shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Dept Audit Log</span>
+</button>
+</div>
+</div>
+<!-- Operational Metrics Grid (Bento Metrics) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Metric 1 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container shadow-sm relative overflow-hidden group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Assigned to Me</span>
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_ind</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-display text-display text-on-surface font-semibold tracking-tight">14</span>
+<span class="font-data-mono text-label-sm text-outline">Active Window</span>
+</div>
+<div class="mt-space-xs text-body-sm text-outline truncate">Active SLA countdown running</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary/20">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container shadow-sm relative overflow-hidden group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pending Review</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">mark_email_unread</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-display text-display text-secondary font-semibold tracking-tight">8</span>
+<span class="font-data-mono text-label-sm text-outline">Unopened</span>
+</div>
+<div class="mt-space-xs text-body-sm text-outline truncate">Awaiting initial triage inspection</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary/20">
+<div class="h-full bg-secondary w-1/2"></div>
+</div>
+</div>
+<!-- Metric 3 (Due Soon: Luminescent Warning) -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container shadow-sm relative overflow-hidden group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider font-semibold">Due Soon (<6h)</span>
+<span class="material-symbols-outlined text-tertiary text-[20px] animate-pulse">timer</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-display text-display text-tertiary font-semibold tracking-tight">3</span>
+<span class="font-data-mono text-label-sm text-tertiary-container font-semibold">Critical Queue</span>
+</div>
+<div class="mt-space-xs text-body-sm text-outline truncate">Risk of Tier-3 escalation breach</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-tertiary/20">
+<div class="h-full bg-tertiary w-4/5"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container shadow-sm relative overflow-hidden group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Escalated to Tier 3</span>
+<span class="material-symbols-outlined text-outline text-[20px]">transit_enterexit</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-display text-display text-on-surface font-semibold tracking-tight">2</span>
+<span class="font-data-mono text-label-sm text-outline">This Week</span>
+</div>
+<div class="mt-space-xs text-body-sm text-outline truncate">Under Dean-level jurisdiction</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-outline-variant/20">
+<div class="h-full bg-outline-variant w-1/4"></div>
+</div>
+</div>
+<!-- Metric 5 (Resolution Rate & Performance) -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-high shadow-md relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider font-semibold">Resolved (MTD)</span>
+<span class="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-display text-display text-on-surface font-semibold tracking-tight">31</span>
+<span class="font-data-mono text-label-sm text-secondary font-medium">94% on-time</span>
+</div>
+<div class="mt-space-xs text-body-sm text-on-surface-variant truncate">Avg resolution: 19.4 hours</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary/20">
+<div class="h-full bg-secondary-container w-[94%]"></div>
+</div>
+</div>
+</div>
+<!-- Main Workspace Dual-Pane Layout (Triage Table + Detail Drawer) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left / Primary Column: Case Management Table (7 cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- Table Control Bar & Filters -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1.5" id="caseFilters">
+<button class="filter-btn active px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-body-sm text-body-sm font-medium shadow-sm transition-all" data-filter="all" type="button">
+              All (14)
+            </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-sm text-body-sm transition-all" data-filter="due-soon" type="button">
+              Due Soon (<6h)
+            </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-sm text-body-sm transition-all" data-filter="pending" type="button">
+              Pending Review
+            </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-sm text-body-sm transition-all" data-filter="high-priority" type="button">
+              High Priority
+            </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-sm text-body-sm transition-all" data-filter="academic" type="button">
+              Academic
+            </button>
+</div>
+<!-- Quick Search -->
+<div class="relative min-w-[200px]">
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container transition-all" placeholder="Filter by token, category..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-[18px]">filter_list</span>
+</div>
+</div>
+<!-- Cases Stream Container -->
+<div class="flex flex-col gap-space-sm" id="casesStream">
+<!-- Case Row 1 (GRV-82A1: Selected & Due Soon) -->
+<div class="case-card cursor-pointer p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-space-sm shadow-md ring-1 ring-primary/40 relative overflow-hidden" onclick="selectCase('GRV-82A1')">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex items-center justify-between gap-space-md pl-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-data-mono text-label-md text-primary font-semibold">GRV-82A1</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Academic</span>
+<span class="hidden sm:inline-flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 2h ago
+                </span>
+</div>
+<!-- Countdown Badge -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-container/20 text-tertiary font-data-mono text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] animate-pulse">alarm</span>
+                04h 32m left
+              </div>
+</div>
+<div class="pl-2 flex flex-col gap-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-medium">
+                Academic: Late Continuous Assessment Marks Publishing
+              </div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-1">
+                Complainant reports CA mark uploads for ECE-402 are overdue by 3 weeks, directly delaying campus internship clearance validations.
+              </p>
+</div>
+<div class="pl-2 pt-1 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">encrypted</span>
+                  Token: #82A1 (Verified)
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+                  Pending Review
+                </span>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-body-sm text-body-sm font-medium group-hover:translate-x-0.5 transition-transform">
+<span>Active in Drawer</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Case Row 2 (GRV-91BC: SLA Expired / Escalating) -->
+<div class="case-card cursor-pointer p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-space-sm shadow-sm relative overflow-hidden" onclick="selectCase('GRV-91BC')">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-center justify-between gap-space-md pl-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-data-mono text-label-md text-on-surface font-semibold">GRV-91BC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Infrastructure</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase">High Priority</span>
+<span class="hidden sm:inline-flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 1d ago
+                </span>
+</div>
+<!-- Countdown Badge (Expired) -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container/40 text-error font-data-mono text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px] animate-spin">warning</span>
+                EXPIRED (-01h 14m)
+              </div>
+</div>
+<div class="pl-2 flex flex-col gap-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-medium">
+                Infrastructure: Main Power Rail Tripping in Power Systems Lab B-302
+              </div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-1">
+                Safety interlock shutdown recurrently halting 4th-year high voltage thesis demonstrations. Risk of hazardous load imbalance.
+              </p>
+</div>
+<div class="pl-2 pt-1 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">encrypted</span>
+                  Token: #91BC
+                </span>
+<span class="px-2 py-0.5 rounded bg-error/20 text-error font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+                  Auto-Escalating to Dean
+                </span>
+</div>
+<button class="px-3 py-1 rounded bg-surface-container-high text-error hover:bg-error hover:text-on-error transition-all font-body-sm text-body-sm font-medium flex items-center gap-1" type="button">
+<span>Intervene / Open</span>
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+</button>
+</div>
+</div>
+<!-- Case Row 3 (GRV-7F9A: Healthy In-Review) -->
+<div class="case-card cursor-pointer p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-space-sm shadow-sm relative overflow-hidden" onclick="selectCase('GRV-7F9A')">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-center justify-between gap-space-md pl-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-data-mono text-label-md text-on-surface font-semibold">GRV-7F9A</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Infrastructure</span>
+<span class="hidden sm:inline-flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 1d ago
+                </span>
+</div>
+<!-- Countdown Badge -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 text-secondary font-data-mono text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+                18h 42m left
+              </div>
+</div>
+<div class="pl-2 flex flex-col gap-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-medium">
+                Infrastructure: Air Conditioning Breakdown in Mechanical CAD Suite
+              </div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-1">
+                Overheating workstation clusters causing simulation crashes during peak afternoon lab hours. Facilities ticket opened.
+              </p>
+</div>
+<div class="pl-2 pt-1 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">encrypted</span>
+                  Token: #7F9A
+                </span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                  In-Review (Facilities Notified)
+                </span>
+</div>
+<span class="text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center gap-1">
+<span>Review Case</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Case Row 4 (GRV-44E2: Faculty Conduct) -->
+<div class="case-card cursor-pointer p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-space-sm shadow-sm relative overflow-hidden" onclick="selectCase('GRV-44E2')">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex items-center justify-between gap-space-md pl-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-data-mono text-label-md text-on-surface font-semibold">GRV-44E2</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Faculty Conduct</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-tertiary-fixed font-label-sm text-label-sm font-semibold uppercase">Urgent</span>
+<span class="hidden sm:inline-flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 5h ago
+                </span>
+</div>
+<!-- Countdown Badge -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 text-secondary font-data-mono text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+                21h 10m left
+              </div>
+</div>
+<div class="pl-2 flex flex-col gap-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-medium">
+                Faculty Conduct: Discrepancy in Final Project Oral Defense Rubric Application
+              </div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-1">
+                Allegation of arbitrary grading variance violating published accreditation rubric standards. Requesting external panel re-evaluation.
+              </p>
+</div>
+<div class="pl-2 pt-1 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">encrypted</span>
+                  Token: #44E2
+                </span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                  In-Review
+                </span>
+</div>
+<span class="text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center gap-1">
+<span>Review Case</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Pagination & Queue Count -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-low rounded-xl text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing 4 of 14 active authority grievances</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-3 py-1 rounded bg-surface-container text-outline hover:text-on-surface disabled:opacity-40" disabled="">Previous</button>
+<button class="px-3 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright">Next</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Slide-Over Review Detail Panel (Case GRV-82A1 Active) (5 cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-xl shadow-lg relative sticky top-20">
+<!-- Drawer Header & Controls -->
+<div class="flex items-start justify-between gap-space-md border-b border-outline-variant/20 pb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="font-data-mono text-label-md text-primary font-bold">CASE FILE: GRV-82A1</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary-fixed font-label-sm text-label-sm uppercase font-semibold">Due Soon</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">
+              Academic: Late Continuous Assessment Marks Publishing
+            </h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Print Case Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Full Screen Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Anonymity Guard & Cryptographic Verification Capsule -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-lowest shadow-inner">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Anonymity Guard Active</span>
+<span class="font-data-mono text-body-sm text-on-surface font-medium">STUDENT-HASH-9941</span>
+<span class="font-body-sm text-outline text-[12px]">Verified Enrolled Student • Dept of Electrical Engineering</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]" title="Zero-knowledge cryptographic verification passed">verified</span>
+</div>
+<!-- SLA Countdown Telemetry Gauge -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-tertiary-container/10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">SLA Escalation Timer</span>
+<span class="font-data-mono text-headline-sm text-tertiary font-bold tracking-tight">04h 32m 18s</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Failure to resolve or record procedural intervention will automatically escalate this dispute to Dean of Engineering at <span class="font-data-mono text-on-surface">18:00 UTC</span>.
+          </p>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden mt-1">
+<div class="bg-gradient-to-r from-secondary-container via-tertiary to-error h-full w-[82%]"></div>
+</div>
+</div>
+<!-- Case Evidence & Submission Narrative -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Complainant Narrative</span>
+<div class="p-space-md rounded-lg bg-surface-container text-body-md text-on-surface leading-relaxed">
+            "The Continuous Assessment (CA-II) results for Course ECE-402 (Advanced Embedded Systems) were scheduled to be uploaded by October 14th per the institutional academic calendar. It has been three weeks without grade publication or official notification. 
+            <br/><br/>
+            Multiple students, including myself, are unable to complete prerequisite verification for our spring corporate internship credits due to this pending grade lock. We have attempted inquiry with the course instructor with no response."
+          </div>
+</div>
+<!-- Attached Documentation / Evidence -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Evidence & Artifacts (2 Files)</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-space-sm p-2 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col overflow-hidden">
+<span class="font-body-sm text-body-sm text-on-surface truncate">ECE402_Syllabus.pdf</span>
+<span class="font-data-mono text-[11px] text-outline">1.2 MB • SHA-256 Valid</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">image</span>
+<div class="flex flex-col overflow-hidden">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Portal_Lockout.png</span>
+<span class="font-data-mono text-[11px] text-outline">840 KB • Timestamped</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Immediate Authority Quick Action Bar -->
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Authority Quick Resolution Actions</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+<!-- Mark In-Review -->
+<button class="px-3 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-body-sm text-body-sm font-medium flex items-center justify-center gap-1.5 transition-all shadow-sm" onclick="handleStatusAction('In-Review')">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Mark In-Review</span>
+</button>
+<!-- Resolve Grievance -->
+<button class="px-3 py-2.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5 transition-all shadow-md hover:bg-primary-container" onclick="openResolutionModal()">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Resolve Grievance</span>
+</button>
+<!-- Early Escalation Button -->
+<button class="px-3 py-2.5 rounded-lg bg-error-container/20 text-error hover:bg-error-container/40 font-body-sm text-body-sm font-medium flex items-center justify-center gap-1.5 transition-all" onclick="openEscalateModal()">
+<span class="material-symbols-outlined text-[16px]">upgrade</span>
+<span>Escalate Early</span>
+</button>
+</div>
+</div>
+<!-- Procedural Audit History Stepper -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Immutable Audit Trail</span>
+<span class="font-data-mono text-[11px] text-outline">Chain Sequence #0984</span>
+</div>
+<div class="flex flex-col gap-space-sm relative pl-4 before:content-[''] before:absolute before:left-1.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Audit Node 1 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container-low"></span>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Assigned to Head of Dept</span>
+<span class="font-data-mono text-label-sm text-outline">Today, 11:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Auto-routed by Classification Model based on category: Academic > Faculty Oversight.</p>
+</div>
+<!-- Audit Node 2 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-low"></span>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Complainant Cryptographic Hash Issued</span>
+<span class="font-data-mono text-label-sm text-outline">Today, 09:28</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Anonymous identity token #82A1 validated against campus directory.</p>
+</div>
+<!-- Audit Node 3 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-surface-container-low"></span>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Grievance Lodged</span>
+<span class="font-data-mono text-label-sm text-outline">Today, 09:28</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Initial submission received via Secure Student Portal.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Early Escalation to Dean Dialog (Mandatory Reason) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-sm p-space-md" id="escalateModal">
+<div class="w-full max-w-lg bg-surface-container-low p-space-lg rounded-xl shadow-2xl flex flex-col gap-space-md border border-outline-variant/30 relative">
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/20">
+<div class="flex items-center gap-space-sm text-error">
+<span class="material-symbols-outlined text-[24px]">transit_enterexit</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Execute Early Escalation</h3>
+</div>
+<button class="p-1 rounded text-outline hover:text-on-surface" onclick="closeEscalateModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs text-body-md text-on-surface-variant">
+<p>Transfer case <span class="font-data-mono font-bold text-on-surface">GRV-82A1</span> directly to the <strong>Office of the Dean of Engineering (Tier 3)</strong> before the natural SLA expiry window.</p>
+<span class="text-error font-body-sm text-body-sm font-medium">Notice: This action enters the immutable institutional ombuds audit record.</span>
+</div>
+<!-- Mandatory Escalation Reason Select -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-medium" for="escalationReason">
+          Mandatory Escalation Justification <span class="text-error">*</span>
+</label>
+<select class="w-full p-2.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="escalationReason">
+<option value="">Select procedural rationale...</option>
+<option value="interdept">Requires Inter-Departmental Dean Authority</option>
+<option value="conflict">Conflict of Interest within Faculty / Dept Leadership</option>
+<option value="policy">Systemic Academic Policy Breach / Accreditation Risk</option>
+<option value="legal">Legal Counsel Consultation Warranted</option>
+<option value="other">Exceptional Circumstances (Detailed Memo Below)</option>
+</select>
+</div>
+<!-- Mandatory Audit Memo -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-medium" for="escalationMemo">
+          Confidential Escalation Brief <span class="text-error">*</span>
+</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="escalationMemo" placeholder="Provide factual context for the Dean regarding why local department-level resolution cannot proceed..." rows="3"></textarea>
+</div>
+<!-- Modal Footer -->
+<div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-outline-variant/20">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm" onclick="closeEscalateModal()">
+          Cancel
+        </button>
+<button class="px-4 py-2 rounded-lg bg-error text-on-error font-body-sm text-body-sm font-semibold hover:bg-error-container transition-all shadow-md" onclick="submitEscalation()">
+          Transfer Jurisdiction to Dean
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: Case Resolution Memo Input -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-sm p-space-md" id="resolutionModal">
+<div class="w-full max-w-lg bg-surface-container-low p-space-lg rounded-xl shadow-2xl flex flex-col gap-space-md border border-outline-variant/30 relative">
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/20">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Record Official Resolution Memo</h3>
+</div>
+<button class="p-1 rounded text-outline hover:text-on-surface" onclick="closeResolutionModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs text-body-md text-on-surface-variant">
+<p>You are officially closing case <span class="font-data-mono font-bold text-on-surface">GRV-82A1</span>. An encrypted time-stamped notice will be dispatched to Anonymous Complainant Token #82A1.</p>
+</div>
+<!-- Resolution Category Outcome -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-medium" for="resolutionOutcome">
+          Resolution Disposition <span class="text-secondary">*</span>
+</label>
+<select class="w-full p-2.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="resolutionOutcome">
+<option value="rectified">Substantiated & Rectified Immediately</option>
+<option value="conditional">Administrative Directive Issued to Instructor</option>
+<option value="not_substantiated">Investigated • Policy Standards Met (Closed)</option>
+<option value="withdrawn">Resolved via Informal Departmental Mediation</option>
+</select>
+</div>
+<!-- Formal Findings Memo -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-medium" for="resolutionFindings">
+          Detailed Findings & Corrective Action Taken <span class="text-secondary">*</span>
+</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="resolutionFindings" placeholder="State concrete resolution details (e.g. Instructor directed to upload grades within 24 hours; Dean Academic notified to lift prerequisite locks)..." rows="4"></textarea>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container rounded-lg">
+<input checked="" class="w-4 h-4 rounded text-secondary bg-surface-container-lowest border-outline-variant focus:ring-0" id="notifyDean" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer" for="notifyDean">
+          Archive copy in School of Engineering Dean Compliance Registry
+        </label>
+</div>
+<!-- Modal Footer -->
+<div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-outline-variant/20">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm" onclick="closeResolutionModal()">
+          Cancel
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-all shadow-md" onclick="submitResolution()">
+          Sign & Dispatch Resolution
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Scripting -->
+<script>
+  // Case selection simulation
+  function selectCase(caseId) {
+    const cards = document.querySelectorAll('.case-card');
+    cards.forEach(c => {
+      c.classList.remove('ring-1', 'ring-primary/40');
+    });
+    event.currentTarget.classList.add('ring-1', 'ring-primary/40');
+  }
+
+  // Filter Buttons
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-high', 'text-primary', 'shadow-sm', 'font-medium');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-high', 'text-primary', 'shadow-sm', 'font-medium');
+      btn.classList.remove('text-on-surface-variant');
+    });
+  });
+
+  // Modal Handlers
+  function openEscalateModal() {
+    document.getElementById('escalateModal').classList.remove('hidden');
+  }
+  function closeEscalateModal() {
+    document.getElementById('escalateModal').classList.add('hidden');
+  }
+  function submitEscalation() {
+    const reason = document.getElementById('escalationReason').value;
+    if (!reason) {
+      alert('Please select a mandatory escalation justification.');
+      return;
+    }
+    alert('Case GRV-82A1 has been escalated to Tier 3 (Dean of Engineering). Audit entry recorded.');
+    closeEscalateModal();
+  }
+
+  function openResolutionModal() {
+    document.getElementById('resolutionModal').classList.remove('hidden');
+  }
+  function closeResolutionModal() {
+    document.getElementById('resolutionModal').classList.add('hidden');
+  }
+  function submitResolution() {
+    const findings = document.getElementById('resolutionFindings').value;
+    if (!findings.trim()) {
+      alert('Please enter findings and corrective action.');
+      return;
+    }
+    alert('Resolution memo committed with SHA-256 integrity seal. Complainant token notified.');
+    closeResolutionModal();
+  }
+
+  function handleStatusAction(status) {
+    alert('Case status updated to ' + status + '. SLA timestamp refreshed.');
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-xl"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">GET Redressal Engine</span><span class="text-outline font-body-sm text-body-sm hidden sm:inline">Procedural institutional accountability & telemetry.</span></div><div class="flex items-center gap-space-sm px-3 py-1.5 rounded-lg bg-surface-container-low border border-outline-variant/30"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">End-to-End Complainant Anonymity Protected</span></div><div class="font-body-sm text-body-sm text-outline">© 2025 Grievance Escalation Tracker. Institutional Discretion Guaranteed.</div></div></footer></body></html>
