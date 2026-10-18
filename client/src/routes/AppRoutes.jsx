@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 // Layouts
 import PublicLayout from '../components/layout/PublicLayout';
 import DashboardLayout from '../components/layout/DashboardLayout';
+import ProtectedRoute from './ProtectedRoute';
 
 // Public Pages
 import LandingPage from '../pages/public/LandingPage';
@@ -45,31 +46,37 @@ export const AppRoutes = () => {
         <Route path="/register" element={<RegisterPage />} />
       </Route>
 
-      {/* Student Protected Portal */}
-      <Route path="/student" element={<DashboardLayout />}>
-        <Route index element={<StudentDashboard />} />
-        <Route path="grievances" element={<StudentGrievancesPage />} />
-        <Route path="grievances/:id" element={<StudentGrievanceDetailPage />} />
-        <Route path="notifications" element={<StudentNotificationsPage />} />
+      {/* Student Protected Portal: ONLY accessible to role === 'student' */}
+      <Route element={<ProtectedRoute allowedRole="student" />}>
+        <Route path="/student" element={<DashboardLayout />}>
+          <Route index element={<StudentDashboard />} />
+          <Route path="grievances" element={<StudentGrievancesPage />} />
+          <Route path="grievances/:id" element={<StudentGrievanceDetailPage />} />
+          <Route path="notifications" element={<StudentNotificationsPage />} />
+        </Route>
       </Route>
 
-      {/* Authority Protected Portal */}
-      <Route path="/authority" element={<DashboardLayout />}>
-        <Route index element={<AuthorityDashboard />} />
-        <Route path="grievances" element={<AuthorityGrievancesPage />} />
-        <Route path="grievances/:id" element={<AuthorityGrievanceDetailPage />} />
-        <Route path="notifications" element={<AuthorityNotificationsPage />} />
+      {/* Authority Protected Portal: ONLY accessible to role === 'authority' */}
+      <Route element={<ProtectedRoute allowedRole="authority" />}>
+        <Route path="/authority" element={<DashboardLayout />}>
+          <Route index element={<AuthorityDashboard />} />
+          <Route path="grievances" element={<AuthorityGrievancesPage />} />
+          <Route path="grievances/:id" element={<AuthorityGrievanceDetailPage />} />
+          <Route path="notifications" element={<AuthorityNotificationsPage />} />
+        </Route>
       </Route>
 
-      {/* Admin / Ombudsman Protected Portal */}
-      <Route path="/admin" element={<DashboardLayout />}>
-        <Route index element={<AdminDashboard />} />
-        <Route path="grievances" element={<AdminGrievancesPage />} />
-        <Route path="grievances/:id" element={<AuthorityGrievanceDetailPage />} />
-        <Route path="hierarchy" element={<HierarchyConfigPage />} />
-        <Route path="analytics" element={<AdminAnalyticsPage />} />
-        <Route path="notifications" element={<AdminNotificationsPage />} />
-        <Route path="settings" element={<AdminSettingsPage />} />
+      {/* Admin / Ombudsman Protected Portal: ONLY accessible to role === 'admin' */}
+      <Route element={<ProtectedRoute allowedRole="admin" />}>
+        <Route path="/admin" element={<DashboardLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="grievances" element={<AdminGrievancesPage />} />
+          <Route path="grievances/:id" element={<AuthorityGrievanceDetailPage />} />
+          <Route path="hierarchy" element={<HierarchyConfigPage />} />
+          <Route path="analytics" element={<AdminAnalyticsPage />} />
+          <Route path="notifications" element={<AdminNotificationsPage />} />
+          <Route path="settings" element={<AdminSettingsPage />} />
+        </Route>
       </Route>
 
       {/* Fallback */}

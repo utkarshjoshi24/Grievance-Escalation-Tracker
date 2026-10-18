@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
-import RoleSwitcher from '../ui/RoleSwitcher';
 
 export const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -28,9 +27,6 @@ export const DashboardLayout = () => {
           <Outlet />
         </main>
       </div>
-
-      {/* Dev Role Switcher */}
-      <RoleSwitcher />
     </div>
   );
 };

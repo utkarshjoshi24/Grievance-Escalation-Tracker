@@ -1,17 +1,23 @@
 import React from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import RoleSwitcher from '../ui/RoleSwitcher';
 import clsx from 'clsx';
 
 export const PublicLayout = () => {
-  const { user, role, isAuthenticated } = useAuth();
+  const { user, role, isAuthenticated, logout } = useAuth();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const getDashboardLink = () => {
     if (role === 'student') return '/student';
     if (role === 'authority') return '/authority';
-    return '/admin';
+    if (role === 'admin') return '/admin';
+    return '/student';
+  };
+
+  const handleSignOut = () => {
+    logout();
+    navigate('/');
   };
 
   return (
@@ -86,26 +92,35 @@ export const PublicLayout = () => {
           </Link>
 
           {isAuthenticated && user ? (
-            <Link
-              to={getDashboardLink()}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary-container text-xs font-semibold shadow-inner-keylight hover:bg-blue-600 transition-colors"
-            >
-              <span className="material-symbols-outlined text-base">dashboard</span>
-              <span>Go to Dashboard</span>
-            </Link>
+            <div className="flex items-center gap-2">
+              <Link
+                to={getDashboardLink()}
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-primary-container text-on-primary-container text-xs font-semibold shadow-inner-keylight hover:bg-blue-600 transition-colors"
+              >
+                <span className="material-symbols-outlined text-base">dashboard</span>
+                <span className="capitalize">{role} Dashboard</span>
+              </Link>
+              <button
+                onClick={handleSignOut}
+                title="Sign Out"
+                className="p-1.5 text-xs text-outline hover:text-red-400 hover:bg-surface-container-high rounded-lg transition-colors"
+              >
+                <span className="material-symbols-outlined text-base">logout</span>
+              </button>
+            </div>
           ) : (
             <div className="flex items-center gap-2">
               <Link
-                to="/login"
+                to="/login?role=student"
                 className="px-3.5 py-2 text-xs font-medium text-on-surface hover:bg-surface-container-high rounded-xl transition-colors"
               >
                 Sign In
               </Link>
               <Link
-                to="/register"
+                to="/register?role=student"
                 className="px-3.5 py-2 text-xs font-semibold bg-primary-container text-on-primary-container rounded-xl shadow-inner-keylight hover:bg-blue-600 transition-colors"
               >
-                Register
+                Sign Up
               </Link>
             </div>
           )}
@@ -139,20 +154,20 @@ export const PublicLayout = () => {
             <ul className="space-y-1.5 text-xs text-outline">
               <li><Link to="/submit" className="hover:text-primary transition-colors">Submit Confidential Grievance</Link></li>
               <li><Link to="/track" className="hover:text-primary transition-colors">Track via UUID / Token</Link></li>
-              <li><Link to="/student" className="hover:text-primary transition-colors">Student Dashboard</Link></li>
-              <li><Link to="/login" className="hover:text-primary transition-colors">Institutional Login</Link></li>
+              <li><Link to="/login?role=student" className="hover:text-primary transition-colors">Student Login</Link></li>
+              <li><Link to="/register?role=student" className="hover:text-primary transition-colors">Student Sign Up</Link></li>
             </ul>
           </div>
 
           <div className="space-y-2">
             <h5 className="text-xs font-mono uppercase text-on-surface font-semibold tracking-wider">
-              Administration
+              Administration & Authority
             </h5>
             <ul className="space-y-1.5 text-xs text-outline">
-              <li><Link to="/authority" className="hover:text-primary transition-colors">Authority Resolution Queue</Link></li>
-              <li><Link to="/admin" className="hover:text-primary transition-colors">Ombudsman Command Center</Link></li>
-              <li><Link to="/admin/hierarchy" className="hover:text-primary transition-colors">Escalation Matrix Config</Link></li>
-              <li><Link to="/admin/analytics" className="hover:text-primary transition-colors">Institutional SLA Compliance</Link></li>
+              <li><Link to="/login?role=authority" className="hover:text-primary transition-colors">Authority Login</Link></li>
+              <li><Link to="/register?role=authority" className="hover:text-primary transition-colors">Authority Sign Up</Link></li>
+              <li><Link to="/login?role=admin" className="hover:text-primary transition-colors">Admin / Ombudsman Login</Link></li>
+              <li><Link to="/register?role=admin" className="hover:text-primary transition-colors">Admin Sign Up</Link></li>
             </ul>
           </div>
 
@@ -183,9 +198,6 @@ export const PublicLayout = () => {
           </div>
         </div>
       </footer>
-
-      {/* Floating Role Switcher */}
-      <RoleSwitcher />
     </div>
   );
 };
